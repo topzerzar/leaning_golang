@@ -23,23 +23,40 @@ func main() {
   // _ not keep value
   // _ = nickname
 
-  fmt.Print("Input a fruit: ")
-  var fruit string
-  fmt.Scanln(&fruit)
+  // IF - ELSE
+  // fmt.Print("Input a fruit: ")
+  // var fruit string
+  // fmt.Scanln(&fruit)
 
-  if fruit == "" {
-    fmt.Println("meh! ")
-    return
-  }
+  // if fruit == "" {
+  //   fmt.Println("meh! ")
+  //   return
+  // }
 
-  switch fruit {
-    case "apple":
-      fmt.Println("Apple")
-    case "banana":
-      fmt.Println("Banana")
-    case "lemon":
-      fmt.Println("Lemon")
-    default:
-      fmt.Println("Default")
+  // switch fruit {
+  //   case "apple":
+  //     fmt.Println("Apple")
+  //   case "banana":
+  //     fmt.Println("Banana")
+  //   case "lemon":
+  //     fmt.Println("Lemon")
+  //   default:
+  //     fmt.Println("Default")
+  // }
+
+  fmt.Println("Input Score: ")
+  var score int
+  fmt.Scanln(&score)
+
+  if score < 50 {
+    fmt.Println("F")
+  } else if score < 60 {
+    fmt.Println("D")
+  } else if score < 70 {
+    fmt.Println("C")
+  } else if score < 80 {
+    fmt.Println("B")
+  } else {
+    fmt.Println("A")
   }
 }

@@ -79,4 +79,9 @@ func main() {
   a[2] = 30
 
   fmt.Println(a)
+  fmt.Println(len(a))
+
+  for i := 0; i < len(a); i++ {
+    fmt.Println(a[i])
+  }
 }

@@ -136,34 +136,49 @@ func main() {
   // fmt.Println(f)
 
   // MAP
-  a := make(map[string]string)
-  a["hello"] = "gopher"
-  a["name"] = "weerapon"
-  a["x"] = "test"
+  // a := make(map[string]string)
+  // a["hello"] = "gopher"
+  // a["name"] = "weerapon"
+  // a["x"] = "test"
+  // fmt.Println(a)
+
+  // // check key in array
+  // x, check := a["x"]
+
+  // if x, check := a["x"]; check {
+  //   fmt.Println(x)
+  // }
+
+  // fmt.Println(check)
+  // fmt.Println(x)
+
+  // // delete key
+  // delete(a, "x")
+  // fmt.Println(a)
+
+  // for key, value := range a {
+  //   fmt.Println(key, " : ", value)
+  // }
+
+  // b := map[string]string {
+  //   "hello": "go",
+  //   "go": "lang",
+  // }
+
+  // fmt.Println(b)
+
+  // POINTER
+  a := 10
   fmt.Println(a)
 
-  // check key in array
-  x, check := a["x"]
+  prtA := &a
+  fmt.Println(prtA)
 
-  if x, check := a["x"]; check {
-    fmt.Println(x)
-  }
+  fmt.Println(*prtA)
 
-  fmt.Println(check)
-  fmt.Println(x)
-
-  // delete key
-  delete(a, "x")
+  *prtA = 20
   fmt.Println(a)
+  fmt.Println(*prtA)
+  fmt.Println(prtA)
 
-  for key, value := range a {
-    fmt.Println(key, " : ", value)
-  }
-
-  b := map[string]string {
-    "hello": "go",
-    "go": "lang",
-  }
-
-  fmt.Println(b)
 }

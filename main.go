@@ -17,5 +17,9 @@ func main() {
   fmt.Printf("My name is %s. \n", name)
 
   nickname := "TOPz"
-  fmt.Printf("My nickname is %s. \n", nickname)
+  // fmt.Printf("My nickname is %s. \n", nickname)
+  
+  // fix compile error case declare vaialble not used 
+  // _ not keep value
+  _ = nickname
 }

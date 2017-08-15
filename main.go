@@ -73,64 +73,97 @@ func main() {
   //     fmt.Println("A")
   // }
 
-  var a [5]int
-  a[0] = 10
-  a[1] = 20
-  a[2] = 30
+  // ARRAY
+  // var a [5]int
+  // a[0] = 10
+  // a[1] = 20
+  // a[2] = 30
 
+  // fmt.Println(a)
+  // fmt.Println(len(a))
+
+  // for i := 0; i < len(a); i++ {
+  //   fmt.Println(a[i])
+  // }
+
+  // for i := range a {
+  //   fmt.Println(a[i])
+  // }
+
+  // for _, v := range a {
+  //   fmt.Println(v)
+  // }
+
+  // b := [3] int{1, 2, 3}
+  // fmt.Println(b)
+
+  // var c [2][3]int
+  // for i := 0; i < len(c); i++ {
+  //   for j := 0; j < len(c[i]); j++ {
+  //     c[i][j] = j
+  //   }
+  // }
+
+  // fmt.Println(c)
+
+  // // array slide
+  // d := make([]int, 5)
+  // d[0] = 10
+  // d[2] = 20
+
+  // fmt.Println(d)
+
+  // d = append(d, 90)
+  // fmt.Println(d)
+
+  // fmt.Println(d[2:4])
+
+  // fmt.Println(d[0:4])
+  // // equal
+  // fmt.Println(d[:4])
+
+  // f := d[2:4]
+  // fmt.Println(f)
+
+  // f[0] = 10
+  // f[1] = 20
+
+  // fmt.Println(d)
+  // fmt.Println(f)
+
+  // f = append(f, 20)
+  // fmt.Println(d)
+  // fmt.Println(f)
+
+  // MAP
+  a := make(map[string]string)
+  a["hello"] = "gopher"
+  a["name"] = "weerapon"
+  a["x"] = "test"
   fmt.Println(a)
-  fmt.Println(len(a))
 
-  for i := 0; i < len(a); i++ {
-    fmt.Println(a[i])
+  // check key in array
+  x, check := a["x"]
+
+  if x, check := a["x"]; check {
+    fmt.Println(x)
   }
 
-  for i := range a {
-    fmt.Println(a[i])
+  fmt.Println(check)
+  fmt.Println(x)
+
+  // delete key
+  delete(a, "x")
+  fmt.Println(a)
+
+  for key, value := range a {
+    fmt.Println(key, " : ", value)
   }
 
-  for _, v := range a {
-    fmt.Println(v)
+  b := map[string]string {
+    "hello": "go",
+    "go": "lang",
   }
 
-  b := [3] int{1, 2, 3}
   fmt.Println(b)
-
-  var c [2][3]int
-  for i := 0; i < len(c); i++ {
-    for j := 0; j < len(c[i]); j++ {
-      c[i][j] = j
-    }
-  }
-
-  fmt.Println(c)
-
-  // array slide
-  d := make([]int, 5)
-  d[0] = 10
-  d[2] = 20
-
-  fmt.Println(d)
-
-  d = append(d, 90)
-  fmt.Println(d)
-
-  fmt.Println(d[2:4])
-
-  fmt.Println(d[0:4])
-  // equal
-  fmt.Println(d[:4])
-
-  f := d[2:4]
-  fmt.Println(f)
-
-  f[0] = 10
-  f[1] = 20
-
-  fmt.Println(d)
-  fmt.Println(f)
-
-  f = append(f, 20)
-  fmt.Println(d)
-  fmt.Println(f)
 }

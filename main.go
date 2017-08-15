@@ -31,4 +31,15 @@ func main() {
     fmt.Println("meh! ")
     return
   }
+
+  switch fruit {
+    case "apple":
+      fmt.Println("Apple")
+    case "banana":
+      fmt.Println("Banana")
+    case "lemon":
+      fmt.Println("Lemon")
+    default:
+      fmt.Println("Default")
+  }
 }

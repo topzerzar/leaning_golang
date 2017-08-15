@@ -44,9 +44,9 @@ func main() {
   //     fmt.Println("Default")
   // }
 
-  fmt.Println("Input Score: ")
-  var score int
-  fmt.Scanln(&score)
+  // fmt.Println("Input Score: ")
+  // var score int
+  // fmt.Scanln(&score)
 
   // if score < 50 {
   //   fmt.Println("F")
@@ -60,16 +60,23 @@ func main() {
   //   fmt.Println("A")
   // }
 
-  switch {
-    case score < 50:
-      fmt.Println("F")
-    case score < 60:
-      fmt.Println("D")
-    case score < 70:
-      fmt.Println("C")
-    case score < 80:
-      fmt.Println("B")
-    default:
-      fmt.Println("A")
-  }
+  // switch {
+  //   case score < 50:
+  //     fmt.Println("F")
+  //   case score < 60:
+  //     fmt.Println("D")
+  //   case score < 70:
+  //     fmt.Println("C")
+  //   case score < 80:
+  //     fmt.Println("B")
+  //   default:
+  //     fmt.Println("A")
+  // }
+
+  var a [5]int
+  a[0] = 10
+  a[1] = 20
+  a[2] = 30
+
+  fmt.Println(a)
 }

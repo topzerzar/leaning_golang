@@ -15,4 +15,7 @@ func main() {
 
   var name = "weerapon top"
   fmt.Printf("My name is %s. \n", name)
+
+  nickname := "TOPz"
+  fmt.Printf("My nickname is %s. \n", nickname)
 }

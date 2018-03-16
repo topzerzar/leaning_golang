@@ -181,4 +181,10 @@ func main() {
   fmt.Println(*prtA)
   fmt.Println(prtA)
 
+  var cal = sum(10 + 20)
+  fmt.Printf("Cal : %d", cal)
+}
+
+func sum(a, b int) int {
+  return a+b
 }
